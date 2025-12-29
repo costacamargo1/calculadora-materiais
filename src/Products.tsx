@@ -13,10 +13,7 @@ interface Product {
   ipi: number | null;
 }
 
-const initialProducts: Product[] = [
-  { id: 1, name: 'Seringa Descartável 5ml', manufacturer: 'Descarpack', cost: 0.8, date: '2025-12-01', ipi: 5 },
-  { id: 2, name: 'Luva de Procedimento (M)', manufacturer: 'Talge', cost: 0.25, date: '2025-12-02', ipi: null },
-];
+const initialProducts: Product[] = [];
 
 type SortKey = keyof Product;
 type SortOrder = 'asc' | 'desc';
