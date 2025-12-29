@@ -33,6 +33,17 @@ const ProductForm: React.FC<ProductFormProps> = ({ onAddProduct, onUpdateProduct
       setDate(productToEdit.date);
       setHasIpi(productToEdit.ipi !== null);
       setIpi(productToEdit.ipi !== null ? productToEdit.ipi.toString() : '');
+    } else {
+      // Reset form for "add" mode
+      setName('');
+      setManufacturer('');
+      setCost('');
+      const today = new Date();
+      const offset = today.getTimezoneOffset();
+      const adjustedDate = new Date(today.getTime() - (offset * 60 * 1000));
+      setDate(adjustedDate.toISOString().split('T')[0]);
+      setHasIpi(false);
+      setIpi('');
     }
   }, [productToEdit]);
 
