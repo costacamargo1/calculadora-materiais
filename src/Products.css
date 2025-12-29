@@ -1,0 +1,133 @@
+.products-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.products-header h2 {
+    font-weight: 600;
+    color: var(--gray-800);
+}
+
+.header-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.export-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.export-btn:hover {
+    background-color: #218838;
+}
+
+.add-product-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+    transition: background-color 0.2s;
+}
+
+.add-product-btn:hover {
+    background-color: #0056b3;
+}
+
+.products-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: var(--white);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.products-table th,
+.products-table td {
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.products-table th {
+    background-color: var(--gray-100);
+    font-weight: 600;
+    color: var(--gray-700);
+}
+
+.products-table th[onClick] {
+    cursor: pointer;
+    user-select: none;
+}
+
+.products-table thead input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid var(--gray-300);
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.products-table tbody tr:hover {
+    background-color: var(--gray-100);
+}
+
+.action-btn {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    width: 80px;
+    text-align: center;
+    transition: background-color 0.2s, color 0.2s;
+    background-color: transparent;
+}
+
+.edit-btn {
+    color: #f0ad4e;
+}
+
+.edit-btn:hover {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+.delete-btn {
+    color: #d9534f;
+}
+
+.delete-btn:hover {
+    background-color: #d9534f;
+    color: white;
+}
